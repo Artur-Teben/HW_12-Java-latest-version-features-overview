@@ -1,0 +1,3 @@
+module user {
+    exports service;
+}
