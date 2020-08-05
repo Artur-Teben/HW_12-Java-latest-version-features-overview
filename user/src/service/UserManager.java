@@ -41,5 +41,4 @@ public class UserManager {
         }
         users.forEach((key, value) -> System.out.println("ID: " + key + " | " + value));
     }
-
 }
