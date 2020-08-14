@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 
 public class Menu {
-    private static final String PAUSE = "Press Enter to continue";
+    private static final String PAUSE_MASSAGE = "Press Enter to continue";
     private final String[] menuItems = {
             "\t\tMENU",
             "1. Show all users",
@@ -42,7 +42,7 @@ public class Menu {
     }
 
     public void pauseConsol() {
-        System.out.println(PAUSE);
+        System.out.println(PAUSE_MASSAGE);
         inputReader();
     }
 
