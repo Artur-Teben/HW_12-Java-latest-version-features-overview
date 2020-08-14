@@ -1,5 +1,6 @@
 package view;
 
+import model.User;
 import service.UserManager;
 
 import java.io.BufferedReader;
@@ -61,7 +62,7 @@ public class Menu {
         Integer inputAge = Integer.parseInt(inputReader());
         System.out.print("Phone Number: ");
         String inputPhoneNumber = inputReader();
-        userManager.addUser(inputFirstName, inputLastName, inputAge, inputPhoneNumber);
+        userManager.addUser(new User(inputFirstName, inputLastName, inputAge, inputPhoneNumber));
         pauseConsol();
         runMenu();
     }

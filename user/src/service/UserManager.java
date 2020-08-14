@@ -10,8 +10,8 @@ public class UserManager {
     static Integer userId = 1;
     private static final Map<Integer, User> users = new HashMap<>();
 
-    public static void addUser(String firstName, String lastName, Integer age, String phoneNumber) {
-        users.put(userId++, new User(firstName, lastName, age, phoneNumber));
+    public static void addUser(User user) {
+        users.put(userId++, user);
     }
 
     public boolean removeUser(Integer userId) {
